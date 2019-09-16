@@ -51,22 +51,26 @@
     <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
 </head>
 <body style="margin: 0px; overflow: hidden;">
-    <a-scene  arjs="debugUIEnable: false; trackingMethod: best;">
-        <a-marker preset="kanji">
-            <a-entity gltf-model="./model/mech_drone/scene.gltf" animation-mixer position="0 0 0" rotation="0 180 0" scale="0.01 0.01 0.01"></a-entity>
-        </a-marker>
-        <a-entity camera></a-entity>
-    </a-scene>
+<!--    <a-scene  arjs="debugUIEnable: false; trackingMethod: best;">-->
+<!--        <a-marker preset="kanji">-->
+<!--            <a-entity gltf-model="./model/mech_drone/scene.gltf" animation-mixer position="0 0 0" rotation="0 180 0" scale="0.01 0.01 0.01"></a-entity>-->
+<!--        </a-marker>-->
+<!--        <a-entity camera></a-entity>-->
+<!--    </a-scene>-->
     <div id="banner">
         <p>
             Откройте данную вкладку в Safari
         </p>
     </div>
     <script>
-        if (device.ios()) {
-            if (navigator.userAgent.indexOf("Chrome") != -1 ) {
-                document.getElementById('banner').classList.add('active')
-            }
+        // if (device.ios()) {
+        //     if (navigator.userAgent.indexOf("Chrome") != -1) {
+        //         document.getElementById('banner').classList.add('active')
+        //     }
+        // }
+
+        if (navigator.userAgent.indexOf("Chrome") != -1) {
+            document.getElementById('banner').classList.add('active')
         }
     </script>
 </body>
