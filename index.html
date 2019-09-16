@@ -58,10 +58,14 @@
         </p>
     </div>
     <script>
-        if (device.ios()) {
-            if(navigator.userAgent.indexOf("Chrome") != -1 ) {
-                document.getElementById('banner').classList.add('active')
-            }
+        // if (device.ios()) {
+        //     if(navigator.userAgent.indexOf("Chrome") != -1 ) {
+        //         document.getElementById('banner').classList.add('active')
+        //     }
+        // }
+
+        if(navigator.userAgent.indexOf("Chrome") != -1 ) {
+            document.getElementById('banner').classList.add('active')
         }
     </script>
 </body>
