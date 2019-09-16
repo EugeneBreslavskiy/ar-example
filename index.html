@@ -38,9 +38,18 @@
     </div>
     <script>
         if (device.ios()) {
-            if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1) {
-                document.location.href = 'https://eugenebreslavskiy.github.io/arexample.github.io/scene.html'
-                alert('safari detected')
+            // if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1) {
+            //     document.location.href = 'https://eugenebreslavskiy.github.io/arexample.github.io/scene.html'
+            //     alert('safari detected')
+            // }
+
+            let ua = navigator.userAgent.toLowerCase()
+            if (ua.indexOf('safari') != -1) {
+                if (ua.indexOf('chrome') > -1) {
+                    alert("chrome") // Chrome
+                } else {
+                    alert("safari") // Safari
+                }
             }
             
             document.getElementById('banner').classList.add('active')
