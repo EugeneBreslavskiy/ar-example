@@ -5,8 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
-    <!-- include A-Frame obviously -->
+    <title>AR</title>
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
     <style>
         body {
@@ -35,21 +34,15 @@
 </head>
 <body style="margin: 0px; overflow: hidden;">
     <div id="banner">
-        <p>Откройте данную вкладку в Safari!</p>
+        <p>Откройте данную вкладку в Safari</p>
     </div>
     <script>
         if (device.ios()) {
-            // if (navigator.userAgent.indexOf("chrome") != -1) {
-            //     document.getElementById('banner').classList.add('active')
-            // }
-            
             if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1) {
                 document.location.href = 'https://eugenebreslavskiy.github.io/arexample.github.io/scene.html'
             }
             
             document.getElementById('banner').classList.add('active')
-            
-            // alert('ios device')
         }
     </script>
 </body>

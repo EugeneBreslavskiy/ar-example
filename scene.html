@@ -5,7 +5,7 @@
     <meta name="viewport"
           content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Document</title>
+    <title>AR Scene</title>
     <!-- include A-Frame obviously -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans:300&display=swap" rel="stylesheet">
     <style>
@@ -17,6 +17,15 @@
             width: 100% !important;
             height: 100% !important;
         }
+        
+        #arjsDebugUIContainer {
+            display: none;
+        }
+        
+        .a-enter-vr {
+            display: none;
+        }
+        
     </style>
     <script src="https://aframe.io/releases/0.7.0/aframe.min.js"></script>
     <!-- include ar.js for A-Frame -->
