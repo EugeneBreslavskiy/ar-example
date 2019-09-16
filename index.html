@@ -39,20 +39,19 @@
     </div>
     <script>
         if (device.ios()) {
-            // if (navigator.userAgent.indexOf("Chrome") != -1) {
+            // if (navigator.userAgent.indexOf("chrome") != -1) {
             //     document.getElementById('banner').classList.add('active')
             // }
+            
+            if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1) {
+                alert('safari')
+            }
+            
 
             document.getElementById('banner').classList.add('active')
             
             alert('ios device')
         }
-
-        // if (navigator.userAgent.indexOf("Chrome") != -1) {
-        //     document.getElementById('banner').classList.add('active')
-        //
-        //     alert('this is chrome')
-        // }
     </script>
 </body>
 </html>
