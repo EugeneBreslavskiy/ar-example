@@ -59,15 +59,9 @@
     </div>
     <script>
         if (device.ios()) {
-            
-            console.log('this is ios device')
-            // if(navigator.userAgent.indexOf("Chrome") != -1 ) {
-            //     document.getElementById('banner').classList.add('active')
-            // }
-        }
-
-        if (navigator.userAgent.indexOf("Chrome") != -1 ) {
-            document.getElementById('banner').classList.add('active')
+            if (navigator.userAgent.indexOf("Chrome") != -1 ) {
+                document.getElementById('banner').classList.add('active')
+            }
         }
     </script>
 </body>
