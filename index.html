@@ -44,13 +44,6 @@
     <script src="https://jeromeetienne.github.io/AR.js/aframe/build/aframe-ar.js"></script>
     <script src="//cdn.rawgit.com/donmccurdy/aframe-extras/v6.0.0/dist/aframe-extras.min.js"></script>
     <script src="https://unpkg.com/current-device/umd/current-device.min.js"></script>
-    <script>
-        if (device.ios()) {
-            if(navigator.userAgent.indexOf("Chrome") != -1 ) {
-                document.getElementById('banner').classList.add('active')
-            }
-        }
-    </script>
 </head>
 <body style="margin: 0px; overflow: hidden;">
     <a-scene  arjs="debugUIEnable: false; trackingMethod: best;">
@@ -64,6 +57,13 @@
             Откройте данную вкладку в Safari
         </p>
     </div>
+    <script>
+        if (device.ios()) {
+            if(navigator.userAgent.indexOf("Chrome") != -1 ) {
+                document.getElementById('banner').classList.add('active')
+            }
+        }
+    </script>
 </body>
 
 </html>
