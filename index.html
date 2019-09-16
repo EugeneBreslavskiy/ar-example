@@ -38,15 +38,11 @@
     </div>
     <script>
         if (device.ios()) {
-            // if (navigator.userAgent.toLowerCase().indexOf('safari/') > -1) {
-            //     document.location.href = 'https://eugenebreslavskiy.github.io/arexample.github.io/scene.html'
-            //     alert('safari detected')
-            // }
-
             if (navigator.userAgent.match('CriOS')) {
-                alert('chrome detected')
+                //alert('chrome detected')
             } else {
-                alert('safari detected')
+                //alert('safari detected')
+                document.location.href = 'https://eugenebreslavskiy.github.io/arexample.github.io/scene.html'
             }
             
             document.getElementById('banner').classList.add('active')
